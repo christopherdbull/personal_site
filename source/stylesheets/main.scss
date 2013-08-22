@@ -1,0 +1,63 @@
+@import 'susy';
+
+//variables
+// colours - http://www.colourlovers.com/palette/3003789/sloos[0-e?widths=0
+$darkColour: #34271F;
+$offWhiteColour: #FFFDF8;
+$slateColour:#C7C7BB;
+$greyBrownColour: #C9BFB5;
+$candyflossColour: #FFDEE0;
+
+
+// typography
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+li { 
+  font-famil: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+//layout
+.page {
+  margin-top:290px;
+  @include container;
+
+}
+
+//styles
+body { 
+  background-color: $darkColour;
+}
+
+.page {
+  h1 {
+    color: $offWhiteColour;
+  }
+
+  h2 {
+    color: $slateColour;
+  }
+
+  p {
+    color: $greyBrownColour;
+    a { 
+      margin-right: 10px;
+      color: $greyBrownColour;
+      text-decoration:none;
+    }
+  }
+
+}
